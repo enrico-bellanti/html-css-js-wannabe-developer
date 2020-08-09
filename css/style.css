@@ -1,0 +1,285 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #303131;
+}
+h1 {
+  margin-bottom: 40px;
+  font-size: 70px;
+  text-align: center;
+}
+
+a{
+  color: #303131;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+a:hover{
+  color: #EA8000;
+}
+
+/* TAVOLOZZA */
+
+/* color: #EA8000; arancio*/
+/* color: #8b98a7; grigio chiaro  */
+/* color: #303131; grigio scuro */
+
+
+/* misure */
+
+
+
+/* mix */
+.flex{
+  display: flex;
+}
+
+.list-inline{
+ display: flex;
+ list-style: none;
+ }
+
+/* containers */
+.container {
+  max-width: 1070px;
+  margin: auto;
+}
+
+.container_small {
+  max-width: 50%;
+  margin: auto;
+}
+
+.btn{
+  padding: 10px 40px;
+  background: #303131;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #EA8000;
+}
+
+/* menu */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+
+.menu_logo{
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.menu_nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 200px);
+}
+
+.menu, .menu_logo, .menu_nav{
+  height: 90px;
+}
+
+/* LOGO SIDE */
+#logo {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+}
+/* LIST SIDE */
+.menu_nav ul li{
+  width: 100px;
+  text-align: right;
+}
+
+
+/* JUMBOTRON */
+
+.jumbo {
+  width: 100%;
+  height: 800px;
+}
+
+.jumbo_wrapper_img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 90px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/architecture-street-window-building-old-city-499998-pxhere.com.jpg);
+  filter: grayscale();
+}
+
+.jumbo_layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.jumbo_wrapper_txt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.jumbo_wrapper_txt .list-inline {
+  width: 50%;
+  justify-content: space-around;
+}
+
+
+.jumbo_wrapper_txt ul li a{
+  font-size: 30px;
+  color: #fff;
+}
+.jumbo_wrapper_txt ul li a:hover{
+  color: #EA8000;
+}
+
+
+.logo_icon i {
+  font-size: 60px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 30px 0 30px 0;
+}
+
+.jumbo_subtitle{
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/* sezione progetti */
+
+#projects .container {
+  padding: 60px;
+  background-color: #fff;
+}
+.projects_list {
+  flex-wrap: nowrap;
+}
+
+.projects_list li{
+  width: calc((100% / 4));
+  height: 500px;
+  border: 1px solid #303131;
+  background-image: url(../img/project_posters.jpg);
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 1.5s;
+  cursor: pointer;
+}
+.projects_list li:hover{
+  filter: grayscale(0);
+  width: 100%;
+}
+
+/* sezione about */
+
+#about {
+  padding: 60px;
+  margin-top: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#about h1, p {
+  color: #fff;
+}
+
+#about p {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+/* sezione contatti */
+
+#contact {
+  margin-top: 300px;
+  padding-top: 60px;
+  background-color: #fff;
+}
+
+#contact label {
+  display: block;
+  padding: 15px 0;
+}
+
+#contact textarea, #contact input {
+  font-size: 16px;
+  color: #EA8000;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+#contact input {
+  width: 100%;
+  height: 30px;
+}
+
+#contact textarea {
+  width: 100%;
+}
+#contact .button_line{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+/* social */
+
+.social_logos ul{
+  padding: 40px 0;
+  justify-content: center;
+}
+.social_logos li{
+  width: 40px;
+  text-align: center;
+}
+.social_logos li a i{
+  font-size: 24px;
+}
+
+/* footer */
+
+footer {
+  height: 80px;
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: right;
+  font-size: 12px;
+  line-height: 80px;
+}

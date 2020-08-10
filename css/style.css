@@ -2,10 +2,10 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ font-family: 'Roboto Mono', monospace;
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
   color: #303131;
 }
 h1 {
@@ -24,15 +24,11 @@ a:hover{
   color: #EA8000;
 }
 
-/* TAVOLOZZA */
+/* PALETTE */
 
-/* color: #EA8000; arancio*/
-/* color: #8b98a7; grigio chiaro  */
-/* color: #303131; grigio scuro */
-
-
-/* misure */
-
+/* color: #EA8000; ORANGE*/
+/* color: #8b98a7; LIGHT GREY  */
+/* color: #303131; DARK GREY */
 
 
 /* mix */
@@ -67,44 +63,6 @@ a:hover{
   background: #EA8000;
 }
 
-/* menu */
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #fff;
-}
-
-.menu_logo{
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-
-.menu_nav{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: calc(100% - 200px);
-}
-
-.menu, .menu_logo, .menu_nav{
-  height: 90px;
-}
-
-/* LOGO SIDE */
-#logo {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
-}
-/* LIST SIDE */
-.menu_nav ul li{
-  width: 100px;
-  text-align: right;
-}
 
 
 /* JUMBOTRON */
@@ -121,7 +79,6 @@ a:hover{
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* margin-top: 90px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,30 +137,13 @@ a:hover{
   margin-top: 30px;
 }
 
-/* sezione progetti */
+/* #PROJECTS */
 
 #projects .container {
   padding: 60px;
   background-color: #fff;
 }
-/* .projects_list {
-  flex-wrap: nowrap;
-}
 
-.projects_list li{
-  width: calc((100% / 4));
-  height: 500px;
-  border: 1px solid #303131;
-  background-image: url(../img/project_posters.jpg);
-  background-position: center;
-  filter: grayscale(100%);
-  transition: all 1.5s;
-  cursor: pointer;
-}
-.projects_list li:hover{
-  filter: grayscale(0);
-  width: 100%;
-} */
 .container_projects{
   display: flex;
   max-width: 1070px;
@@ -211,8 +151,6 @@ a:hover{
 }
 
 .col-4{
-  /* width: calc((100% / 12) * 4);
-  padding: 0 15px; */
   width: 100%;
 }
 
@@ -262,7 +200,7 @@ a:hover{
   transform: scale(1.1);
 }
 
-/* sezione about */
+/* #ABOUT */
 
 #about {
   padding: 60px;
@@ -280,7 +218,7 @@ a:hover{
   text-align: center;
 }
 
-/* sezione contatti */
+/* #CONTACT */
 
 #contact {
   margin-top: 300px;
@@ -296,8 +234,6 @@ a:hover{
 #contact textarea, #contact input {
   font-size: 16px;
   color: #EA8000;
-  font-family: 'Roboto Mono', monospace;
-
 }
 
 #contact input {
@@ -316,7 +252,7 @@ a:hover{
 
 
 
-/* social */
+/* SOCIAL */
 
 .social_logos ul{
   padding: 40px 0;
@@ -330,7 +266,7 @@ a:hover{
   font-size: 24px;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
   height: 80px;
@@ -340,6 +276,8 @@ footer {
   font-size: 12px;
   line-height: 80px;
 }
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 767px){
   .project_img_list li{

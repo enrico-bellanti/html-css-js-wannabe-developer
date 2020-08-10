@@ -4,29 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- cdn fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <title>Wannabe Developer</title>
   </head>
   <body>
-
-    <!-- menu in alto fixed -->
-    <!-- <div class="menu">
-      <div class="container flex">
-        <div class="menu_logo">
-          <div class="logo_wrapper"><span id="logo">B.ENRICO</span></div>
-        </div>
-        <nav class="menu_nav">
-          <ul class="list-inline">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div> -->
-    <!-- /menu in alto fixed -->
 
     <!-- Jumbotron -->
     <div class="jumbo">
@@ -37,9 +23,9 @@
     <div class="jumbo_wrapper_txt">
       <div class="logo_icon"><i class="fab fa-hotjar "></i></div>
       <ul class="list-inline">
-        <li><a href="#">projects.</a></li>
-        <li><a href="#">about.</a></li>
-        <li><a href="#">contact.</a></li>
+        <li><a href="#projects">projects.</a></li>
+        <li><a href="#about">about.</a></li>
+        <li><a href="#contact">contact.</a></li>
       </ul>
       <p class="jumbo_subtitle">"artisan of the future"</p>
     </div>
@@ -112,22 +98,22 @@
     </div>
     <!-- /sezione about -->
 
-    <!-- sezione about -->
+    <!-- sezione contact -->
     <div id="contact">
       <div class="container">
         <div class="container_small">
           <h1>contact.</h1>
           <form class="contact_form">
-            <label for="name">Your Name *</label>
+            <label for="input_name">Your Name *</label>
             <input id="input_name" name="name" type="text">
-            <label for="email">Your Email *</label>
+            <label for="input_email">Your Email *</label>
             <input id="input_email" name="email" type="text">
-            <label for="phone">Your Phone</label>
+            <label for="input_phone">Your Phone</label>
             <input id="input_phone" name="phone" type="text">
-            <label for="message">Enter Your Message Here *</label>
+            <label for="input_message">Enter Your Message Here *</label>
             <textarea id="input_message" name="message" rows="8" cols="80"></textarea>
             <div class="button_line">
-              <a id="email" href="mailto:henry@gmail.com">henry@gmail.com</a>
+              <a id="email_henry" href="mailto:henry@gmail.com">henry@gmail.com</a>
               <button id="invia" class="btn">Send</button>
             </div>
           </form>
@@ -142,15 +128,15 @@
         </div>
       </div>
     </div>
-    <!-- /sezione about -->
+    <!-- /sezione contact -->
 
-    <!-- inizio pie' pagina -->
+    <!-- pie' pagina -->
     <footer>
       <p>© 2020 by Urban Artist. Proudly created by Henry</p>
     </footer>
-    <!-- /fine pie' pagina -->
+    <!-- /pie' pagina -->
 
-
+    <!-- collegamento a file js -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

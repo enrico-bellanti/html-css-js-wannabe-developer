@@ -1,27 +1,9 @@
+/* GENERAL */
 * {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- font-family: 'Roboto Mono', monospace;
-}
-
-body {
-  color: #303131;
-}
-h1 {
-  margin-bottom: 40px;
-  font-size: 70px;
-  text-align: center;
-}
-
-a{
-  color: #303131;
-  text-decoration: none;
-  transition: color 1s;
-}
-
-a:hover{
-  color: #EA8000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* PALETTE */
@@ -30,267 +12,122 @@ a:hover{
 /* color: #8b98a7; LIGHT GREY  */
 /* color: #303131; DARK GREY */
 
-
-/* mix */
-.flex{
-  display: flex;
+.dark-grey{
+    color: #303131;
+}
+.gold{
+    color: #EA8000;
 }
 
+/* COMMON FEATURES */
 .list-inline{
- display: flex;
- list-style: none;
- }
-
-/* containers */
-.container {
-  max-width: 1070px;
-  margin: auto;
+    display: flex;
+    list-style: none;
 }
 
-.container_small {
-  max-width: 50%;
-  margin: auto;
+a{
+    text-decoration: none;
 }
 
-.btn{
-  padding: 10px 40px;
-  background: #303131;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.5s;
-}
-.btn:hover{
-  background: #EA8000;
+.title-section{
+    font-size: 6rem;
+    text-align: center;
 }
 
-
-
-/* JUMBOTRON */
-
-.jumbo {
-  width: 100%;
-  height: 800px;
+.margin_bt_100{
+    margin-bottom: 100px;
 }
 
-.jumbo_wrapper_img{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/architecture-street-window-building-old-city-499998-pxhere.com.jpg);
-  filter: grayscale();
+/* COMMONS SECTIONS */
+
+.container-100{
+    max-width: 100%;
+}
+.container-80{
+    width: 80%;
+    margin: auto;
 }
 
-.jumbo_layover {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+#jumbo-wall{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    background-image: url(../img/jumbo-wall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale() brightness(0.6);
 }
 
+/* PAGE HEADER */
 
-
-.jumbo_wrapper_txt{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  color: #fff;
+#page-header{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.page-header-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
 }
 
-.jumbo_wrapper_txt .list-inline {
-  width: 50%;
-  justify-content: space-around;
+/* LOGO */
+.logo-wrapper{
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #000;
+}
+.logo-text{
+    color: #fff;
+    transition: 1s;
+}
+.logo-wrapper:hover .logo-text{
+    color:  #EA8000;
 }
 
-
-.jumbo_wrapper_txt ul li a{
-  font-size: 30px;
-  color: #fff;
+/* indexes list */
+.indexes-list{
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
 }
-.jumbo_wrapper_txt ul li a:hover{
-  color: #EA8000;
+.indexes-list li{
+    width: calc((100% / 3) - 30px);
+    text-align: center;
 }
-
-
-.logo_icon i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  font-size: 60px;
-  color: #fff;
-  background-color: #000;
-  border-radius: 50%;
-  padding: 50px;
-  margin: 30px 0 30px 0;
+.indexes-list li a{
+    font-size: 30px;
+    color: #fff;
+    transition: 1s;
+}
+.indexes-list li a:hover{
+color: #EA8000;
 }
 
-.jumbo_subtitle{
-  font-size: 22px;
-  margin-top: 30px;
-}
-
-/* #PROJECTS */
-
-#projects .container {
-  padding: 60px;
-  background-color: #fff;
-}
-
-.container_projects{
-  display: flex;
-  max-width: 1070px;
-  margin: auto;
-}
-
-.col-4{
-  width: 100%;
-}
-
-.n_list_style {
-  list-style: none;
-}
-
-.project_img_list{
-  display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-content: space-around;
-   max-height: 1900px;
-}
-
-.project_img_list li{
-  position: relative;
-  width: calc((100% / 3) - 30px);
-  margin-bottom: 50px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.project_img_list img{
-  width: 100%;
-  transition: all 0.5s;
-}
-
-.img_layout {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  padding: 20px;
-  transition: all 0.5s;
-}
-
-.project_img_list li:hover .img_layout{
-  display: block;
-  background-color: rgba(47, 49, 49, 0.8);
-
-}
-.project_img_list li:hover img{
-  transform: scale(1.1);
-}
-
-/* #ABOUT */
-
-#about {
-  padding: 60px;
-  margin-top: 300px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-#about h1, p {
-  color: #fff;
-}
-
-#about p {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-}
-
-/* #CONTACT */
-
-#contact {
-  margin-top: 300px;
-  padding-top: 60px;
-  background-color: #fff;
-}
-
-#contact label {
-  display: block;
-  padding: 15px 0;
-}
-
-#contact textarea, #contact input {
-  font-size: 16px;
-  color: #EA8000;
-}
-
-#contact input {
-  width: 100%;
-  height: 30px;
-}
-
-#contact textarea {
-  width: 100%;
-}
-#contact .button_line{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* subtitle */
+.page-header-subtitle{
+    background-color: #000;
+    color: #fff;
 }
 
 
-
-/* SOCIAL */
-
-.social_logos ul{
-  padding: 40px 0;
-  justify-content: center;
-}
-.social_logos li{
-  width: 40px;
-  text-align: center;
-}
-.social_logos li a i{
-  font-size: 24px;
+/* PROJECTS */
+.project-container{
+    background-color: #fff;
+    min-height: 400px;
 }
 
-/* FOOTER */
-
-footer {
-  height: 80px;
-  padding-right: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
-  text-align: right;
-  font-size: 12px;
-  line-height: 80px;
-}
-
-/* MEDIA QUERY */
-
-@media screen and (max-width: 767px){
-  .project_img_list li{
-    width: calc(100% - 30px);
-
-  }
-  .project_img_list{
-     max-height: none;
-  }
-}

@@ -54,13 +54,15 @@
 }
 .jumbo-text-container{
     height: 350px;
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
 }
+
+/* LOGO */
 #logo{
     display: inline-block;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.8);
 
     border-radius: 50%;
@@ -92,6 +94,7 @@
     color: #fff;
     font-size: 12px;
 }
+/* END LOGO */
 
 /* underconstruncion */
 #temporary-section{
@@ -100,6 +103,8 @@
 #temporary-section h2{
     background-color: rgb(255, 255, 255, 0.3);
 }
+/* end underconstruncion */
+
 
 /* FOOTER */
 

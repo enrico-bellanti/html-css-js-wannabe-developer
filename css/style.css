@@ -11,6 +11,7 @@
 /* color: #EA8000; ORANGE*/
 /* color: #8b98a7; LIGHT GREY  */
 /* color: #303131; DARK GREY */
+/* color: #262626 darkest grey */
 
 .dark-grey{
     color: #303131;
@@ -18,61 +19,26 @@
 .gold{
     color: #EA8000;
 }
-.white{
-    color: #fff;
-}
 
-/* COMMON FEATURES */
-.list-inline{
-    display: flex;
-    list-style: none;
-}
+/* COMMON */
 
-a{
-    text-decoration: none;
-}
-
-.title-section{
-    font-size: 6rem;
-    text-align: center;
-}
-.margin_bt_100{
-    margin-bottom: 100px;
-}
-
-.align-centr{
-    text-align: center;
-}
-
-/* BUTTON */
-.btn{
-    padding: 10px 40px;
-    background: #303131;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #EA8000;
-}
-  
-
-/* COMMONS SECTIONS */
-
-.container-100{
-    max-width: 100%;
-}
-.container-80{
-    width: 80%;
-    margin: auto;
-}
-.container_small {
-    max-width: 50%;
+.body-wrapper{
+    max-width: 1400px;
+    height: 100vh;
     margin: auto;
 }
 
-#jumbo-wall{
+/* HEADER */
+
+.header-nav{
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+}
+
+/* MAIN */
+
+#jumbotron{
     position: fixed;
     left: 0;
     top: 0;
@@ -86,182 +52,89 @@ a{
     background-repeat: no-repeat;
     filter: grayscale() brightness(0.6);
 }
-
-/* PAGE HEADER */
-
-#page-header{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}
-.page-header-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-}
-
-/* LOGO */
-.logo-wrapper{
-    width: 80px;
-    height: 80px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-
-    background-color: #000;
-}
-.logo-text{
-    color: #fff;
-    transition: 1s;
-}
-.logo-wrapper:hover .logo-text{
-    color:  #EA8000;
-}
-
-/* indexes list */
-.indexes-list{
-    width: 100%;
-    justify-content: center;
-    margin: 20px 0;
-}
-.indexes-list li{
-    width: calc((100% / 3));
+.jumbo-text-container{
+    height: 350px;
+    padding-top: 100px;
     text-align: center;
 }
-.indexes-list li a{
-    font-size: 30px;
+#logo{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.logo-top, .logo-bottom{
+    margin: 0 10px;
+    height: 50%;
+}
+.logo-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.logo-label{
+    font-family: 'Roboto Slab', serif;
+    padding-top: 15px;
+    font-size: 20px;
     color: #fff;
-    transition: 1s;
 }
-.indexes-list li a:hover{
-color: #EA8000;
-}
-
-/* subtitle */
-.page-header-subtitle{
-    background-color: #000;
+.logo-bottom{
+    padding-top: 10px;
+    border-top: 1px solid #fff;
     color: #fff;
-    padding: 2px;
+    font-size: 12px;
 }
 
+/* underconstruncion */
+#temporary-section{
+    text-align: center;
+}
+#temporary-section h2{
+    background-color: rgb(255, 255, 255, 0.3);
+}
 
-/* PROJECTS */
-.project-container{
-    padding: 60px;
-    background-color: #fff;
-    min-height: 400px;
-}
-.project-lists{
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-.project-lists .col-4{
-    width: calc((100% / 3) - 30px);
-    margin: 0 15px 30px 15px;
-    height: 200px;
+/* FOOTER */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding-right: 30px;
 
-    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: right;
+    font-size: 12px;
+    line-height: 50px;
 }
-.project-lists .col-4:hover{
-    background-size: 120%;
-}
-
-/* projects col */
-.project-lists .col-4:nth-child(1){
-    background-image: url(../img/github-images/boolflix.JPG);
-}
-.project-lists .col-4:nth-child(2){
-    background-image: url(../img/github-images/helbiz.JPG);
-}
-.project-lists .col-4:nth-child(3){
-    background-image: url(../img/github-images/spotify.JPG);
-}
-.project-lists .col-4:nth-child(4){
-    background-image: url(../img/github-images/boolbnb.JPG);
-}
-.project-lists .col-4:nth-child(5){
-    background-image: url(../img/github-images/hubspot.JPG);
-}
-.project-lists .col-4:nth-child(6){
-    background-image: url(../img/github-images/molisana.JPG);
-}
-
-/* ABOUT */
-#about{
-    padding: 60px;
-    margin: 200px 0;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* #CONTACT */
-
-#contact {
-  padding: 60px 0;
-  background-color: #fff;
-}
-
-#contact label {
-  display: block;
-  padding: 15px 0;
-}
-
-#contact textarea, #contact input {
-  font-size: 16px;
-  color: #EA8000;
-}
-
-#contact input {
-  width: 100%;
-  height: 30px;
-  padding:0px 7px;
-}
-
-#contact textarea {
-  width: 100%;
-  padding:7px 7px;
-}
-#contact .button_line{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-
 
 /* SOCIAL */
-
-.git-hub-logo{
+.social-logo{
     color: #fff;
     font-size: 14px;
 }
+
 .git-hub-logo:hover{
     color: #3fb950;
+}
+.linked-in-logo:hover{
+    color: #0a66c2;
 }
 
 /* EMAIL */
 #email{
-    transition: 1s;
+    color: #fff;
 }
 #email:hover{
     color: #EA8000;
 }
 
-/* FOOTER */
-
-footer {
-  height: 80px;
-  padding-right: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
-  text-align: right;
-  font-size: 12px;
-  line-height: 80px;
-}
+  

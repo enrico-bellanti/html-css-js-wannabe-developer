@@ -7,99 +7,69 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <!-- cdn google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <!-- style css -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">    
+        
+        <!-- style -->
         <link rel="stylesheet" href="css/style.css">
-        <title>Enrico Bellanti</title>
+        <script src="https://unpkg.com/vue@next" defer></script>
+        <script src="js/app.js" defer></script>
+        <title>Enrico Bellanti HomePage</title>
     </head>
     <body>
-        <!-- page-container -->
-        <div class="container-100">
 
-            <!-- background-image -->
-            <div id="jumbo-wall"></div>
-            <!-- /background-image -->
+        <!-- HEADER -->
+        <!-- <header>
+            <div class="header-nav"></div>
+        </header> -->
+        <!-- HEADER -->
 
-            <!-- page header -->
-            <section id="page-header" class="margin_bt_100">
-                <!-- text container -->
-                <div class="page-header-text-container">
+        <!-- BODY WRAPPER -->
+        <div class="body-wrapper">
+        
+            <!-- MAIN -->
+            <main>
 
-                    <!-- logo container -->
-                    <div class="logo-wrapper">
-                        <span class="logo-text">&lt;eb&sol;&gt;</span>
-                    </div>
-                    <!-- /logo container -->
+                <!-- jumbotron factory -->
+                <section id="jumbotron"></section>
+                <!-- jumbotron factory -->
 
-                    <!-- indexes list -->
-                    <ul class="indexes-list list-inline">
-                        <li><a href="#projects">projects.</a></li>
-                        <li><a href="#about">about.</a></li>
-                        <li><a href="#contact">contact.</a></li>
-                    </ul>
-                    <!-- /indexes list -->
-                    
-                    <!-- page header subtitle -->
-                    <p class="page-header-subtitle">"artisan of the future"</p>
-                    <!-- /page header subtitle -->
-                </div>
-                <!-- /text container -->
-            </section>
-            <!-- /page header -->
-
-            <!-- section Projects -->
-            <section id="projects" class="margin_bt_100">
-                <div class="container-80 project-container">
-                    <h2 class="title-section dark-grey">projects.</h2>
-                    <ul class="project-lists list-inline">
-                        <li class="col-4"></li>
-                        <li class="col-4"></li>
-                        <li class="col-4"></li>
-                        <li class="col-4"></li>
-                        <li class="col-4"></li>
-                        <li class="col-4"></li>
-                    </ul>
-                </div>
-            </section>
-            <!-- /section Projects -->
-
-            <!-- section about -->
-            <section id="about" class="container-100 white">
-                <h2 class="title-section">about.</h2>
-                <div class="container-80">
-                    <p class="align-centr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat vitae necessitatibus labore accusantium. Atque nesciunt illo fuga dignissimos eveniet! Fugiat reiciendis odit quos beatae, consectetur sint vel consequuntur voluptates? Nam quidem impedit ratione! Itaque dolores ipsa eos. Illo natus possimus officiis temporibus fugiat, sed recusandae placeat nulla sit.</p>
-                </div>
-            </section>
-            <!-- /section about -->
-
-            <!-- sezione contact -->
-            <div id="contact" class="container-100">
-                <div class="container_small dark-grey">
-                    <h2 class="title-section">contact.</h2>
-                    <form class="contact_form">
-                        <label for="input_name">Your Name *</label>
-                        <input id="input_name" name="name" type="text">
-                        <label for="input_email">Your Email *</label>
-                        <input id="input_email" name="email" type="text">
-                        <label for="input_phone">Your Phone</label>
-                        <input id="input_phone" name="phone" type="text">
-                        <label for="input_message">Enter Your Message Here *</label>
-                        <textarea id="input_message" style="resize: none;" name="message" rows="8" cols="80"></textarea>
-                        <div class="button_line">
-                            <a id="email" class="dark-grey" href="mailto:enrico.bellanti@gmail.com">enrico.bellanti@gmail.com</a>
-                            <button id="invia" class="btn">Send</button>
+                <!-- wrapper logo + text -->
+                <section class="jumbo-text-container">
+                    <div id="logo">
+                        <div class="logo-top">
+                            <span class="logo-label">&lt;EB&sol;&gt;</span>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <!-- /sezione contact -->
-  
-        <!-- pie' pagina -->
-        <footer>
-            <p class="white">© 2020 by Urban Artist. Proudly created by Enrico Bellanti <a href="https://github.com/enrico-bellanti" class="git-hub-logo" target="_blank"><i class="fab fa-github"></i></a></p>
-        </footer>
-        <!-- /pie' pagina -->
+                        <div class="logo-bottom">
+                            <span>Web Artisan</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- wrapper logo + text -->
 
+                <!-- under construction -->
+                <section id="temporary-section">
+                    <h2>Coming Soon...</h2>
+                </section>
+                <!-- /under construction -->
+
+
+            </main>
+            <!-- /MAIN -->
+        
+        
+            <!-- FOOTER -->
+            <footer>
+                <p class="white">© 2020 by Urban Artist. Proudly created by 
+                    <a id="email" class="dark-grey" href="mailto:enrico.bellanti@gmail.com">Enrico Bellanti</a>
+                    <a href="https://github.com/enrico-bellanti" class="git-hub-logo social-logo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/enrico-bellanti/" class="linked-in-logo social-logo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </p>
+            </footer>
+            <!-- /FOOTER -->
         </div>
-        <!-- /page-container -->
-    </body>
+        <!-- /BODY WRAPPER -->
+
+        </body>    
 </html>
